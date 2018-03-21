@@ -33,7 +33,7 @@ time, mark, audio, video {
   height: auto;
 }
 
-.container {
+.card {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -41,19 +41,18 @@ time, mark, audio, video {
   margin-right: 20px;
 }
 
-.card-entire {
+.card-wrapper {
   width: 50%;
   height: auto;
 }
 
-.card .back img, .card .front img {
+.card-side img {
   width: 100%;
   height: auto;
 }
 
-.card.back{
+.card-side-back {
 	display: none;
-
 }
 
 h1 {
@@ -65,7 +64,7 @@ h1 {
 /* Tablet-size */
 
 @media (min-width: 600px) {
-  .card-entire {
+  .card-wrapper {
     width: 33.33%;
   }
   .container {
@@ -75,7 +74,7 @@ h1 {
 /* Desktop-size */
 
 @media (min-width: 900px) {
-  .card-entire {
+  .card-wrapper {
     width: 20%;
   }
 }
@@ -83,27 +82,28 @@ h1 {
 
 
 /* Flip funktion */
+/*
 
 $card-transition-time: 2s;
 
 
-.container {
+.card {
    perspective: 800px;
    position: relative;
 
    &.is-switched {
-      .card-entire {
+      .card-wrapper {
          animation: rotate $card-transition-time ease-out both;
       }
    }
 }
 
-   .card-entire {
+   .card-wrapper {
       transform-style: preserve-3d;
       animation: rotate-inverse $card-transition-time linear both;
    }
 
-   .cardx {
+   .card-side {
       backface-visibility: hidden;
       position: absolute;
       top: 0;
@@ -116,7 +116,7 @@ $card-transition-time: 2s;
    }
 
 
-   .back {
+   .card-side-back {
       transform: rotateY(180deg);
    }
 
@@ -143,55 +143,4 @@ $card-transition-time: 2s;
   100% {
     transform: rotateY(0);
   }
-}
-
-/* .card {
-   margin: 2rem auto;
-   max-width: 350px;
-} */
-
-/* .card {
-   padding: 1em;
-   border-radius: 5px;
-   color: white;
-   background-color: #ff4136;
-}
-
-
-.card__side--back {
-   background-color: #0074d9;
-} */
-
-/* .btn {
-   outline: none;
-   border: none;
-   border-radius: 5px;
-   padding: 15px 25px;
-   font-size: 22px;
-   text-decoration: none;
-   margin: 20px;
-   color: #fff;
-   position: relative;
-   display: inline-block;
-   text-transform: uppercase;
-   font-weight: 600;
-
-   &:active {
-      transform: translate(0px, 5px);
-      box-shadow: 0px 1px 0px 0px rgba(#000, .25);
-   }
-}
-
-
-.btn--blue {
-   background-color: #55acee;
-   box-shadow: 0px 5px 0px 0px #3C93D5;
-
-   &:hover {
-      background-color: #6FC6FF;
-   }
-}
-
-.title {
-   color: #fff;
 } */
