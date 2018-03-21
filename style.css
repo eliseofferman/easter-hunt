@@ -65,14 +65,17 @@ h1 {
    position: relative;
 }
 
+.card.is-switched-once>.card-wrapper {
+	animation: rotate-inverse 1s ease-out both;
+}
+
 .card.is-switched>.card-wrapper {
   animation: rotate 1s ease-out both;
 }
 
-.card-wrapper {
-	animation: rotate-inverse 1s linear both;
-  transform-style: preserve-3d;
-
+.card>.card-wrapper {
+	transform-style: preserve-3d;
+	height: 215px;
 }
 
 .card-side {
@@ -84,7 +87,7 @@ h1 {
 }
 
 
-.card-side.is-active {
+.card.is-switched>.card-wrapper>.card-side:first-child {
   position: static;
 }
 

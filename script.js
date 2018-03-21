@@ -3,7 +3,8 @@
 // Toggle the class to is-switched
 // Toggle card children to is-active
 function toggle() {
-this.classList.toggle("is-switched");
+  this.classList.add("is-switched-once");
+  this.classList.toggle("is-switched");
 }
 
 document.getElementById("card1").onclick = toggle
