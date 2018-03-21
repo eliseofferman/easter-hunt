@@ -41,14 +41,20 @@ time, mark, audio, video {
   margin-right: 20px;
 }
 
-.card {
+.card-entire {
   width: 50%;
   height: auto;
 }
 
-.card img {
+
+.card .back img, .card .front img {
   width: 100%;
   height: auto;
+}
+
+.card.back{
+	display: none;
+
 }
 
 h1 {
@@ -60,7 +66,7 @@ h1 {
 /* Tablet-size */
 
 @media (min-width: 600px) {
-  .card {
+  .card-entire {
     width: 33.33%;
   }
   .container {
@@ -70,7 +76,7 @@ h1 {
 /* Desktop-size */
 
 @media (min-width: 900px) {
-  .card {
+  .card-entire {
     width: 20%;
   }
 }
@@ -154,7 +160,7 @@ $card-transition-time: 2s;
 }
 
 body {
-   background-color: #5a5a5a;
+   background-color: #fff;
    text-align: center;
    padding: 1.5rem;
 }
@@ -164,10 +170,10 @@ h2 {
    margin: 0;
 }
 
-.card {
+/* .card {
    margin: 2rem auto;
    max-width: 350px;
-}
+} */
 
 .card__side {
    padding: 1em;
@@ -181,7 +187,7 @@ h2 {
    background-color: #0074d9;
 }
 
-.btn {
+/* .btn {
    outline: none;
    border: none;
    border-radius: 5px;
@@ -213,4 +219,4 @@ h2 {
 
 .title {
    color: #fff;
-}
+} */
