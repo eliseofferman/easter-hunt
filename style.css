@@ -12,11 +12,11 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	padding: 0;
+	margin: 0;
 	vertical-align: baseline;
 }
 
@@ -29,29 +29,24 @@ time, mark, audio, video {
 }
 
 .logotype {
-  width: 30%;
   height: auto;
-}
-
-.cards-collection {
-  margin-left: 20px;
-  margin-right: 20px;
+	width: 30%;
 }
 
 .card {
+	height: auto;
   width: 50%;
-  height: auto;
 }
 
 .card-side img {
+	height: auto;
   width: 100%;
-  height: auto;
 }
 
 h1 {
+	color: black;
   font-family: inherit;
   font-size: 80px;
-  color: black;
   text-align: center;
 }
 
@@ -61,6 +56,8 @@ h1 {
   display: flex;
   flex-flow: wrap;
   justify-content: flex-start;
+	margin-left: 20px;
+  margin-right: 20px;
 }
 
 .card {
@@ -73,15 +70,16 @@ h1 {
 }
 
 .card-wrapper {
+	animation: rotate-inverse 1s linear both;
   transform-style: preserve-3d;
-  animation: rotate-inverse 1s linear both;
+
 }
 
 .card-side {
   backface-visibility: hidden;
   position: absolute;
+	left: 0;
   top: 0;
-  left: 0;
   width: 100%;
 }
 
