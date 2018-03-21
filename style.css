@@ -46,7 +46,6 @@ time, mark, audio, video {
   height: auto;
 }
 
-
 .card .back img, .card .front img {
   width: 100%;
   height: auto;
@@ -88,23 +87,23 @@ h1 {
 $card-transition-time: 2s;
 
 
-.card {
+.container {
    perspective: 800px;
    position: relative;
 
    &.is-switched {
-      .card__wrapper {
+      .card-entire {
          animation: rotate $card-transition-time ease-out both;
       }
    }
 }
 
-   .card__wrapper {
+   .card-entire {
       transform-style: preserve-3d;
       animation: rotate-inverse $card-transition-time linear both;
    }
 
-   .card__side {
+   .cardx {
       backface-visibility: hidden;
       position: absolute;
       top: 0;
@@ -117,7 +116,7 @@ $card-transition-time: 2s;
    }
 
 
-   .card__side--back {
+   .back {
       transform: rotateY(180deg);
    }
 
@@ -146,36 +145,12 @@ $card-transition-time: 2s;
   }
 }
 
-
-
-
-
-
-
-
-// ignore
-
-* {
-   box-sizing: border-box;
-}
-
-body {
-   background-color: #fff;
-   text-align: center;
-   padding: 1.5rem;
-}
-
-h1,
-h2 {
-   margin: 0;
-}
-
 /* .card {
    margin: 2rem auto;
    max-width: 350px;
 } */
 
-.card__side {
+/* .card {
    padding: 1em;
    border-radius: 5px;
    color: white;
@@ -185,7 +160,7 @@ h2 {
 
 .card__side--back {
    background-color: #0074d9;
-}
+} */
 
 /* .btn {
    outline: none;
