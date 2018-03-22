@@ -41,7 +41,6 @@ time, mark, audio, video {
 .card-side img {
 	height: 100%;
   /* min-width: 215px; */
-
 }
 
 h1 {
@@ -50,6 +49,40 @@ h1 {
   font-size: 80px;
   text-align: center;
 }
+
+#back-color1 {
+	background-color: #000075;
+}
+
+#back-color2 {
+	background-color: #2effc3;
+}
+
+#back-color9 {
+	background-color: #ffff76;
+}
+
+#back-color11 {
+	background-color: #aa61ff;
+}
+
+#back-color15 {
+	background-color: #49e003;
+}
+
+#back-color17 {
+	background-color: #fc56ce;
+}
+
+#back-color18 {
+	background-color: #ffce00;
+}
+
+#back-color20 {
+	background-color: #ff5555;
+}
+
+
 
 /* Flip funktion */
 
@@ -97,8 +130,8 @@ h1 {
 
 .card-side-back {
   transform: rotateY(180deg);
+	width: 100%;
 }
-
 
 @keyframes rotate {
   0% {
