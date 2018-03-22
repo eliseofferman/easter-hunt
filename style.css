@@ -39,7 +39,7 @@ time, mark, audio, video {
 }
 
 .card-side img {
-	height: 100%;
+	width: 100%;
   /* min-width: 215px; */
 }
 
