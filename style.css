@@ -35,12 +35,12 @@ time, mark, audio, video {
 
 .card {
 	height: auto;
-  width: 50%;
+  min-width: 215px;
 }
 
 .card-side img {
-	height: auto;
-  width: 100%;
+	width: 100%;
+  /* min-width: 215px; */
 }
 
 h1 {
@@ -50,12 +50,46 @@ h1 {
   text-align: center;
 }
 
+#back-color1 {
+	background-color: #000075;
+}
+
+#back-color2 {
+	background-color: #2effc3;
+}
+
+#back-color9 {
+	background-color: #ffff76;
+}
+
+#back-color11 {
+	background-color: #aa61ff;
+}
+
+#back-color15 {
+	background-color: #49e003;
+}
+
+#back-color17 {
+	background-color: #fc56ce;
+}
+
+#back-color18 {
+	background-color: #ffce00;
+}
+
+#back-color20 {
+	background-color: #ff5555;
+}
+
+
+
 /* Flip funktion */
 
 .cards-collection {
   display: flex;
   flex-flow: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 	margin-left: 20px;
   margin-right: 20px;
 }
@@ -80,10 +114,12 @@ h1 {
 
 .card-side {
   backface-visibility: hidden;
+	height: 100%;
   position: absolute;
 	left: 0;
   top: 0;
   width: 100%;
+
 }
 
 
@@ -94,8 +130,8 @@ h1 {
 
 .card-side-back {
   transform: rotateY(180deg);
+	width: 100%;
 }
-
 
 @keyframes rotate {
   0% {
