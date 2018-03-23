@@ -44,11 +44,38 @@ time, mark, audio, video {
 }
 
 h1 {
-	color: black;
-  font-family: inherit;
-  font-size: 80px;
-  text-align: center;
+	color: #2effc3;
+  font-family: ‘Josefin Sans’, verdana;
+	font-weight: 300;
+  font-size: 70px;
+	padding: 1% 0px 1% 10%;
+	margin: 5% 10% 0px 0px;
+  text-align:left;
+	background-color: #ffff76;
 }
+
+h2 {
+	color: white;
+  font-family: ‘Josefin Sans’, verdana;
+	font-weight: 300;
+  font-size: 50px;
+	margin: 5px 0px 0px 30%;
+	padding: 1% 5% 1% 0px;
+  text-align:right;
+	background-color: #2effc3;
+}
+
+h3 {
+	color: pink;
+  font-family: ‘Josefin Sans’, verdana;
+	font-weight: 300;
+  font-size: 25px;
+	margin: 5px 0px 5% 60%;
+	padding: 1% 5% 1% 0px;
+  text-align:right;
+	background-color: #2effc3;
+}
+
 
 h5 {
 	color: yellow;
