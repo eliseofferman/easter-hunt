@@ -39,10 +39,10 @@ body{
 
 .card-side img {
 	width: 100%;
-  /* min-width: 215px; */
 }
 
 h1 {
+	background-color: #ffff76;
 	color: #2effc3;
   font-family: ‘Josefin Sans’, verdana;
 	font-weight: 300;
@@ -50,10 +50,10 @@ h1 {
 	padding: 1% 0px 1% 10%;
 	margin: 5% 10% 0px 0px;
   text-align:left;
-	background-color: #ffff76;
 }
 
 h2 {
+	background-color: #2effc3;
 	color: white;
   font-family: ‘Josefin Sans’, verdana;
 	font-weight: 300;
@@ -61,10 +61,10 @@ h2 {
 	margin: 5px 0px 0px 30%;
 	padding: 1% 5% 1% 0px;
   text-align:right;
-	background-color: #2effc3;
 }
 
 h3 {
+	background-color: #2effc3;
 	color: pink;
   font-family: ‘Josefin Sans’, verdana;
 	font-weight: 300;
@@ -72,9 +72,7 @@ h3 {
 	margin: 5px 0px 5% 60%;
 	padding: 1% 5% 1% 0px;
   text-align:right;
-	background-color: #2effc3;
 }
-
 
 h5 {
 	color: yellow;
@@ -118,7 +116,6 @@ h5 {
 
 
 /* Flip funktion */
-
 .cards-collection {
   display: flex;
   flex-flow: wrap;
@@ -129,9 +126,9 @@ h5 {
 }
 
 .card {
+	 height: 256px;
    perspective: 800px;
    position: relative;
-	 height: 256px;
 	 min-width: 256px;
 }
 
@@ -144,8 +141,8 @@ h5 {
 }
 
 .card>.card-wrapper {
-	transform-style: preserve-3d;
 	height: inherit;
+	transform-style: preserve-3d;
 }
 
 .card-side {
@@ -155,7 +152,6 @@ h5 {
 	left: 0;
   top: 0;
   width: 100%;
-
 }
 
 
@@ -170,27 +166,25 @@ h5 {
 }
 
 .video{
-	text-align: center;
 	margin-top: 5%;
 	margin-bottom: 5%;
+	text-align: center;
 }
 
 .button a {
-	 position: relative;
-	 bottom: 40px;
-	 left: 75px;
-	 height: 25px;
-	 width: 100px;
 	 background: #f5f5fc;
 	 border-radius: 20px;
+	 bottom: 40px;
+	 color: #000075;
 	 font-family: verdana;
 	 font-size: 12px;
-	 text-decoration: none;
-	 color: #000075;
+	 height: 25px;
+	 left: 75px;
 	 padding: 7px;
+	 position: relative;
+	 text-decoration: none;
+	 width: 100px;
 }
-
-
 
 .footer {
 	background-color: #7c7c93;
@@ -204,15 +198,15 @@ h5 {
 }
 
 .footer-section-box {
-	width: calc(50% - 20px);
 	padding: 20px;
+	width: calc(50% - 20px);
 }
 
 .footer-section a {
+	color: white;
 	font-family: verdana;
 	font-size: 14px;
 	font-weight: 200;
-	color: white;
 	text-decoration: none;
 }
 
@@ -221,9 +215,8 @@ h5 {
 }
 
 .footer-section a:hover {
-    /* text-decoration: underline; */
-		border-bottom: 2px solid white;
-		transition-delay: 0.3s;
+	border-bottom: 2px solid white;
+	transition-delay: 0.3s;
 }
 
 .contact-icons {
@@ -231,15 +224,15 @@ h5 {
 }
 
 .contact-icons img {
-	width: 3%;
 	height: 3%;
+	width: 3%;
 }
 
 .contact-icons p {
+	color: yellow;
 	font-family: verdana;
 	font-size: 12px;
 	font-weight: 200;
-	color: yellow;
 	text-decoration: none;
 }
 
@@ -268,12 +261,7 @@ h5 {
 }
 
 /* Tablet-size */
-
 @media (min-width: 600px) and (max-width: 899px){
-  .card {
-    /* width: 190px;
-		height: 190px; */
-  }
   .card {
     justify-content: flex-start;
   }
@@ -281,12 +269,9 @@ h5 {
 		width: calc(50% - 20px);
 	}
 }
-/* Desktop-size */
 
+/* Desktop-size */
 @media (min-width: 900px) {
-  .card {
-    width: 20%;
-  }
 	.footer-section-box {
 		width: calc(25% - 20px);
 	}
