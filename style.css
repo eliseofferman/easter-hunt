@@ -198,7 +198,8 @@ h5 {
 
 .footer-section {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .footer-section-box {
@@ -267,7 +268,7 @@ h5 {
 
 /* Tablet-size */
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 899px){
   .card {
     /* width: 190px;
 		height: 190px; */
@@ -286,6 +287,6 @@ h5 {
     width: 20%;
   }
 	.footer-section-box {
-		width: calc(25% - 20px);
+		width: 25%;
 	}
 }
