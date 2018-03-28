@@ -24,10 +24,6 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
-body{
-	background: #f5f5fc;
-}
-
 .header-styling {
   background-color: pink;
 }
@@ -80,15 +76,6 @@ h3 {
 	background-color: #2effc3;
 }
 
-.video{
-	/* text-align: center; */
-	/* margin-left: 25%; */
-	/* margin-top: 5%; */
-	text-align: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
-
-}
 
 h5 {
 	color: yellow;
@@ -180,6 +167,8 @@ h5 {
 	width: 100%;
 }
 
+
+
 .footer {
 	background-color: #7c7c93;
 	padding: 50px;
@@ -213,7 +202,7 @@ h5 {
 		transition-delay: 0.3s;
 }
 
-/* .contact-icons {
+.contact-icons {
 	text-align: center;
 }
 
@@ -228,11 +217,8 @@ h5 {
 	font-weight: 200;
 	color: yellow;
 	text-decoration: none;
+}
 
-} */
-
-
-display: flex;
 @keyframes rotate {
   0% {
     transform: rotateY(0);
@@ -279,8 +265,4 @@ display: flex;
 	.footer-section-box {
 		width: calc(25% - 20px);
 	}
-}
-
-time. {
-	transition: all 2s 1s ease;
 }
