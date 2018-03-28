@@ -24,6 +24,10 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
+body{
+	background: #f5f5fc;
+}
+
 .header-styling {
   background-color: pink;
 }
@@ -76,6 +80,15 @@ h3 {
 	background-color: #2effc3;
 }
 
+.video{
+	/* text-align: center; */
+	/* margin-left: 25%; */
+	/* margin-top: 5%; */
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
 
 h5 {
 	color: yellow;
@@ -266,4 +279,8 @@ display: flex;
 	.footer-section-box {
 		width: calc(25% - 20px);
 	}
+}
+
+time. {
+	transition: all 2s 1s ease;
 }
