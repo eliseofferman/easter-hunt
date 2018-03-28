@@ -167,9 +167,12 @@ h5 {
 	width: 100%;
 }
 
+.footer {
+	background-color: #7c7c93;
+	padding: 50px;
+}
+
 .footer-section {
-	background-color: lightgrey;
-	padding: 100px;
 	display: flex;
 	justify-content: flex-start;
 }
@@ -182,6 +185,8 @@ h5 {
 .footer-section a {
 	font-family: verdana;
 	font-size: 14px;
+	font-weight: 200;
+	color: white;
 	text-decoration: none;
 }
 
@@ -189,7 +194,32 @@ h5 {
 	list-style: none;
 }
 
+.footer-section a:hover {
+    /* text-decoration: underline; */
+		border-bottom: 2px solid white;
+		transition-delay: 0.3s;
+}
 
+.contact-icons {
+	text-align: center;
+}
+
+.contact-icons img {
+	width: 3%;
+	height: 3%;
+}
+
+.contact-icons p {
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: 200;
+	color: yellow;
+	text-decoration: none;
+
+}
+
+
+display: flex;
 @keyframes rotate {
   0% {
     transform: rotateY(0);
