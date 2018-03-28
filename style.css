@@ -24,6 +24,10 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
+body{
+	background: #f5f5fc;
+}
+
 .header-styling {
   background-color: pink;
 }
@@ -31,11 +35,6 @@ time, mark, audio, video {
 .logotype {
   height: auto;
 	width: 30%;
-}
-
-.card {
-	height: 256px;
-  min-width: 256px;
 }
 
 .card-side img {
@@ -131,6 +130,8 @@ h5 {
 .card {
    perspective: 800px;
    position: relative;
+	 height: 256px;
+	 min-width: 256px;
 }
 
 .card.is-switched-once>.card-wrapper {
@@ -143,7 +144,7 @@ h5 {
 
 .card>.card-wrapper {
 	transform-style: preserve-3d;
-	height: 256px;
+	height: inherit;
 }
 
 .card-side {
@@ -167,6 +168,11 @@ h5 {
 	width: 100%;
 }
 
+.video{
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
 
 
 .footer {
@@ -247,7 +253,8 @@ h5 {
 
 @media (min-width: 600px) {
   .card {
-    width: 33.33%;
+    /* width: 190px;
+		height: 190px; */
   }
   .card {
     justify-content: flex-start;
