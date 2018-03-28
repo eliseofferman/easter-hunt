@@ -24,10 +24,6 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
-body{
-	background: #f5f5fc;
-}
-
 .header-styling {
   background-color: pink;
 }
@@ -80,15 +76,6 @@ h3 {
 	background-color: #2effc3;
 }
 
-.video{
-	/* text-align: center; */
-	/* margin-left: 25%; */
-	/* margin-top: 5%; */
-	text-align: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
-
-}
 
 h5 {
 	color: yellow;
@@ -180,9 +167,14 @@ h5 {
 	width: 100%;
 }
 
+
+
+.footer {
+	background-color: #7c7c93;
+	padding: 50px;
+}
+
 .footer-section {
-	background-color: lightgrey;
-	padding: 100px;
 	display: flex;
 	justify-content: flex-start;
 }
@@ -195,6 +187,8 @@ h5 {
 .footer-section a {
 	font-family: verdana;
 	font-size: 14px;
+	font-weight: 200;
+	color: white;
 	text-decoration: none;
 }
 
@@ -202,6 +196,28 @@ h5 {
 	list-style: none;
 }
 
+.footer-section a:hover {
+    /* text-decoration: underline; */
+		border-bottom: 2px solid white;
+		transition-delay: 0.3s;
+}
+
+.contact-icons {
+	text-align: center;
+}
+
+.contact-icons img {
+	width: 3%;
+	height: 3%;
+}
+
+.contact-icons p {
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: 200;
+	color: yellow;
+	text-decoration: none;
+}
 
 @keyframes rotate {
   0% {
@@ -249,8 +265,4 @@ h5 {
 	.footer-section-box {
 		width: calc(25% - 20px);
 	}
-}
-
-time. {
-	transition: all 2s 1s ease;
 }
