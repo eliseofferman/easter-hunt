@@ -24,6 +24,10 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
+body{
+	background: #f5f5fc;
+}
+
 .header-styling {
   background-color: pink;
 }
@@ -44,10 +48,53 @@ time, mark, audio, video {
 }
 
 h1 {
-	color: black;
-  font-family: inherit;
-  font-size: 80px;
-  text-align: center;
+	color: #2effc3;
+  font-family: ‘Josefin Sans’, verdana;
+	font-weight: 300;
+  font-size: 70px;
+	padding: 1% 0px 1% 10%;
+	margin: 5% 10% 0px 0px;
+  text-align:left;
+	background-color: #ffff76;
+}
+
+h2 {
+	color: white;
+  font-family: ‘Josefin Sans’, verdana;
+	font-weight: 300;
+  font-size: 50px;
+	margin: 5px 0px 0px 30%;
+	padding: 1% 5% 1% 0px;
+  text-align:right;
+	background-color: #2effc3;
+}
+
+h3 {
+	color: pink;
+  font-family: ‘Josefin Sans’, verdana;
+	font-weight: 300;
+  font-size: 25px;
+	margin: 5px 0px 5% 60%;
+	padding: 1% 5% 1% 0px;
+  text-align:right;
+	background-color: #2effc3;
+}
+
+.video{
+	/* text-align: center; */
+	/* margin-left: 25%; */
+	/* margin-top: 5%; */
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+h5 {
+	color: yellow;
+	font-family: verdana;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 #back-color1 {
@@ -133,6 +180,29 @@ h1 {
 	width: 100%;
 }
 
+.footer-section {
+	background-color: lightgrey;
+	padding: 100px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer-section-box {
+	width: calc(50% - 20px);
+	margin: 20px;
+}
+
+.footer-section a {
+	font-family: verdana;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.footer-section ul {
+	list-style: none;
+}
+
+
 @keyframes rotate {
   0% {
     transform: rotateY(0);
@@ -166,6 +236,9 @@ h1 {
   .card {
     justify-content: flex-start;
   }
+	.footer-section-box {
+		width: calc(33.33% - 20px);
+	}
 }
 /* Desktop-size */
 
@@ -173,4 +246,11 @@ h1 {
   .card {
     width: 20%;
   }
+	.footer-section-box {
+		width: calc(25% - 20px);
+	}
+}
+
+time. {
+	transition: all 2s 1s ease;
 }
